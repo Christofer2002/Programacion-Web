@@ -1,0 +1,45 @@
+:root{
+    /*Custom properties*/
+   --blanco:#FFFFFF; 
+   --secundario:#00838F;
+   --primario:#0047AB;
+   --gris:#757575;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /*1rem = 10px*/
+    
+}
+
+.titulo{
+    text-align: center; 
+    font-size: 3rem;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+.sGrafico{
+    margin-left: 22rem;
+    margin-bottom: -24.5rem;
+    margin-top: 7rem;
+    width: 25rem;
+}
+
+.imageGrafico{
+    margin-left: 4rem;
+}
+
+.sWeb{
+    margin-left: 95rem;
+    width: 25rem;
+    margin-bottom: 15rem;
+}
+
+.imageWeb{
+    margin-left: 4rem;
+}
