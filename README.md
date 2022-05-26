@@ -1,2 +1,2 @@
 # Programacion-Web
-Mi pagina web DigitalesUpala, hecho en HTML, Css y Javascript.
+Mi pagina web DigitalesUpala, hecho en HTML, CSS y Javascript.
