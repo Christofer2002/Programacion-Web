@@ -1,6 +1,7 @@
 :root{
     /*Custom properties*/
-   --blanco:#FFFFFF; 
+   --blanco:#FFFFFF;
+   --amarillo:#FFC300; 
    --secundario:#00838F;
    --primario:#0047AB;
    --gris:#757575;
@@ -24,26 +25,7 @@ body{
     font-size: 2rem;
 }
 
-.sGrafico{
-    margin-left: 22rem;
-    margin-bottom: -24.5rem;
-    margin-top: 7rem;
-    width: 25rem;
-}
 
-.imageGrafico{
-    margin-left: 4rem;
-}
-
-.sWeb{
-    margin-left: 95rem;
-    width: 25rem;
-    margin-bottom: 15rem;
-}
-
-.imageWeb{
-    margin-left: 4rem;
-}
 
 .contenedor{
     margin : 0 auto 0 auto;
@@ -51,11 +33,21 @@ body{
 
 .nav-bg{
     background-color: var(--secundario);
-    padding: 0.7rem;
+   
 }
 
 .navegacion-principal{
-   text-align: center;
-   margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 0.5rem 0.7rem;
+    margin-left: 15rem;
 }
+
+.navegacion-principal a{
+   color: var(--blanco);
+   text-decoration: none;
+}
+
+
 
