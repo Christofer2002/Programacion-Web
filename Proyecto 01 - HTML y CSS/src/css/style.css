@@ -44,3 +44,11 @@ body{
 .imageWeb{
     margin-left: 4rem;
 }
+
+.navegacion-principal{
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
