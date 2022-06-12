@@ -29,7 +29,8 @@ body{
 }
 
 .contenedor{
-    margin : 0 auto 0 auto;
+    max-width: 120rem;
+    margin : 0 auto;
 }
 
 .nav-bg{
@@ -39,20 +40,34 @@ body{
 
 .navegacion-principal{
     display: flex;
-    align-items: center;
-    justify-content:space-evenly;
+    flex-direction: column;
     margin-left: 15rem;
 }
 
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .navegacion-principal a{
+        margin-left: 5rem;
+    }
+}
+
 .navegacion-principal a{
+    display: block;
+    text-align: center;
    color: var(--blanco);
    text-decoration: none;
    font-weight: bold;
-   padding: 1rem 0.7rem;
+   font-weight: 700;
+   font-size: 1.7rem;
+   padding: 1rem;
+   margin-right: 10rem;
 }
 
 .navegacion-principal a:hover{
     background-color: var(--amarillo);
     color: var(--negro);
-  
 }
