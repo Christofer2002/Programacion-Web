@@ -12,7 +12,13 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+
+*, *:before,*:after{
+    box-sizing: inherit;
+}
+
 body{
     font-size: 14px; /*1rem = 10px*/
     font-family: cursive;
@@ -39,9 +45,7 @@ body{
 }
 
 .navegacion-principal{
-    display: flex;
-    flex-direction: column;
-    margin-left: 15rem;
+  
 }
 
 @media (min-width: 768px) {
@@ -49,10 +53,16 @@ body{
         flex-direction: row;
         justify-content:space-evenly;
         align-items: center;
+        margin-top: 2rem;
+        margin-right: 12rem;
+       padding-left: 9rem;
+       display: flex;
+       margin-bottom: 1rem;
     }
     .navegacion-principal a{
-        margin-left: 5rem;
+        margin-right: 5rem;
     }
+
 }
 
 .navegacion-principal a{
@@ -65,9 +75,25 @@ body{
    font-size: 1.7rem;
    padding: 1rem;
    margin-right: 10rem;
+   margin-left: 15rem;
 }
 
 .navegacion-principal a:hover{
     background-color: var(--amarillo);
     color: var(--negro);
+}
+
+.logo{
+    background-image: url(../img/Tarjeta\ Delante.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 30rem;
+    padding: 0.3rem;
+}
+
+
+.contenido-logo a{
+    text-decoration: none;
+     
 }
