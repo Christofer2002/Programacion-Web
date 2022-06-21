@@ -25,9 +25,28 @@ body{
     
 }
 
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
 .titulo{
     text-align: center; 
-    font-size: 2.8rem;
 }
 
 .titulo span{
@@ -39,13 +58,24 @@ body{
     margin : 0 auto;
 }
 
-.nav-bg{
+.boton-contactar{
+   margin-top: 2rem;
+   margin-left: 4rem;
     background-color: var(--secundario);
-   
+    color: var(--blanco);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
-.navegacion-principal{
-  
+.boton-contactar a{
+    color: var(--blanco);
+}
+
+.nav-bg{
+    background-color: var(--secundario);
 }
 
 @media (min-width: 768px) {
@@ -55,14 +85,14 @@ body{
         align-items: center;
         margin-top: 2rem;
         margin-right: 12rem;
-       padding-left: 9rem;
+       padding-left: 12rem;
        display: flex;
        margin-bottom: 1rem;
     }
-    .navegacion-principal a{
-        margin-right: 5rem;
-    }
 
+    .boton-contactar{
+     
+    }
 }
 
 .navegacion-principal a{
@@ -74,13 +104,13 @@ body{
    font-weight: 700;
    font-size: 1.7rem;
    padding: 1rem;
-   margin-right: 10rem;
-   margin-left: 15rem;
+    transition: all .3s ease-in-out;
 }
 
 .navegacion-principal a:hover{
     background-color: var(--amarillo);
     color: var(--negro);
+
 }
 
 .logo{
@@ -89,11 +119,50 @@ body{
     background-size: cover;
     text-align: center;
     height: 30rem;
-    padding: 0.3rem;
+    padding: 20rem;
+    position: relative;
 }
 
+.contenido-logo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   top: 0;
+   background-color: rgba(0,0,0,0.6);
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+
+}
 
 .contenido-logo a{
     text-decoration: none;
-     
+}
+
+.contenido-logo h2,
+.contenido-logo p{
+  color: var(--blanco);
+}
+
+.logo-ubicacion{
+    align-items:flex-end;
+    margin-right: 2rem;
+}
+
+.contenido-grafico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contenido-web{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
 }
