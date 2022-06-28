@@ -4,8 +4,7 @@
    --amarillo:#FFC300; 
    --secundario:#00838F;
    --primario:#0047AB;
-   --gris:#757575;
-   --negro : #negro;
+   --gris:#DFE9F3;
    --center : center;
 
 }
@@ -21,24 +20,8 @@ html{
 
 body{
     font-size: 14px; /*1rem = 10px*/
-    font-family: cursive;
-    
-}
-
-h1{
-    font-size: 2.5rem;
-    font-weight: bold;
-
-}
-
-h2{
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-h3{
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 100%);;    
 }
 
 h1,h2,h3{
@@ -58,20 +41,47 @@ h1,h2,h3{
     margin : 0 auto;
 }
 
+.sombra{
+    -webkit-box-shadow: -1px 0px 10px 4px rgba(0,0,0,0.32);
+    -moz-box-shadow: -1px 0px 10px 4px rgba(0,0,0,0.32);
+    box-shadow: -1px 0px 10px 4px rgba(0,0,0,0.32);
+    background-color: var(--blanco);
+    border-radius: 1rem;
+}
+
 .boton-contactar{
-   margin-top: 2rem;
-   margin-left: 4rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
     background-color: var(--secundario);
     color: var(--blanco);
     font-size: 1.5rem;
     padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: 2px solid var(--blanco);
+    font-weight: bold;
+}
+
+.boton-contactar a{
+    padding-top: 1rem;
+    padding-bottom: 1.4rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.boton-contactar:hover{
+    background-color: var(--amarillo);
+}
+
+.boton-contactar a:hover{
+    color: black;
 }
 
 .boton-contactar a{
     color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .nav-bg{
@@ -84,15 +94,47 @@ h1,h2,h3{
         justify-content:space-evenly;
         align-items: center;
         margin-top: 2rem;
-        margin-right: 12rem;
-       padding-left: 12rem;
+        margin-left:6rem;
        display: flex;
        margin-bottom: 1rem;
     }
 
     .boton-contactar{
-     
+        width: auto;
+        margin-left: 4rem;
+        transition: all .3s ease-in-out;
     }
+
+    .boton-contactar a:hover{
+        transition-duration: 0.4s;
+    }
+
+    .navegacion-principal a{
+        transition: all .3s ease-in-out;
+        border: none !important;
+    }
+
+    .main{
+        background-color: var(--blanco);
+        margin-left: 19rem;
+        margin-right: 19rem;
+    }
+}
+
+@media (min-width: 1270px)
+{
+    .navegacion-principal{
+        margin-left: 8rem;
+    }
+ 
+}
+
+@media (min-width: 1500px)
+{
+    .navegacion-principal{
+        margin-left: 20rem;
+    }
+ 
 }
 
 .navegacion-principal a{
@@ -103,23 +145,23 @@ h1,h2,h3{
    font-weight: bold;
    font-weight: 700;
    font-size: 1.7rem;
-   padding: 1rem;
-    transition: all .3s ease-in-out;
+   padding: 1rem;  
+   border: 2px solid var(--gris);
 }
 
 .navegacion-principal a:hover{
     background-color: var(--amarillo);
     color: var(--negro);
-
 }
 
 .logo{
-    background-image: url(../img/Tarjeta\ Delante.png);
+    background-image: url(../img/Tarjeta\ Delante1.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    height: 30rem;
-    padding: 20rem;
+    height: 10rem;
+    padding: 12.4rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -128,17 +170,12 @@ h1,h2,h3{
     bottom: 0;
     left: 0;
     right: 0;
-   top: 0;
+    top: 0;
    background-color: rgba(0,0,0,0.6);
    display: flex;
    flex-direction: column;
    text-align: center;
    justify-content: center;
-
-}
-
-.contenido-logo a{
-    text-decoration: none;
 }
 
 .contenido-logo h2,
@@ -149,9 +186,10 @@ h1,h2,h3{
 .logo-ubicacion{
     align-items:flex-end;
     margin-right: 2rem;
+    font-size: 1.2rem;
 }
 
-.contenido-grafico{
+ /*.contenido-grafico{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,5 +202,31 @@ h1,h2,h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 11rem;
+}  */
+
+.main{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.main h2{
+    padding-top: 2rem;
+}
+
+.nuestros-servicios{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+}
+
+.contenido-grafico{
+    text-align: justify;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+}
+
+.contenido-web{
+    text-align: justify;
+    margin-right: 2.5rem;
 }
