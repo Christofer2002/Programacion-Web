@@ -390,8 +390,3 @@ p.p-grafico{
     justify-content: center;
     margin-right: 1.8rem;
 }
-
-.ultima-informacion{
-    scroll-snap-align: center;
-    scroll-snap-stop: always
-}
