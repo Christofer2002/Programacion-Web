@@ -169,6 +169,10 @@ h1,h2,h3{
         scroll-snap-align: center;
         scroll-snap-stop: always;
      }
+
+     .facebook, .whatsapp, .correo{
+        justify-content: center;
+    }
 }
 
 @media (min-width: 1280px)
@@ -187,6 +191,8 @@ h1,h2,h3{
     width: 100%;
     justify-content: end !important;
     }
+
+    
 }
  
 
@@ -430,6 +436,18 @@ p.p-grafico{
 
 .facebook, .whatsapp, .correo{
     display: flex;
-    margin-left: 2rem;
+    justify-content: center;
     margin-bottom: 2rem;
+}
+
+.whatsapp{
+    margin-left: 2rem;
+}
+
+.correo{
+    margin-right: 1rem;
+}
+
+.lugar{
+    padding-bottom: 2rem;
 }
