@@ -51,7 +51,7 @@ h1,h2,h3{
 }
 
 .boton-contactar{
-    margin-top: 2rem;
+
     margin-left: 1rem;
     background-color: var(--secundario);
     color: var(--blanco);
@@ -62,6 +62,7 @@ h1,h2,h3{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     border: 2px solid var(--blanco);
     font-weight: bold;
+    text-decoration: none;
 }
 
 .boton-contactar a{
@@ -158,6 +159,16 @@ h1,h2,h3{
         scroll-snap-align: center;
         scroll-snap-stop: always;
     }
+
+    .resumen-servicios img{
+        padding-top: 7rem !important;
+        padding-bottom: 5rem;
+     }
+
+     .scroll{
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+     }
 }
 
 @media (min-width: 1280px)
@@ -336,6 +347,7 @@ p.p-grafico{
     width: min(60rem, 100%); /*Utilizar el valor mas pequeño*/ 
     margin: 0 auto !important;
     padding: 2rem;
+  
     border-radius: 20px;
 }
 
@@ -355,6 +367,7 @@ p.p-grafico{
     font-size: 1.4rem;
     font-weight: bold;
     text-transform: uppercase;
+    padding-bottom: 2rem;
 }
 
 .campo{
@@ -382,6 +395,7 @@ p.p-grafico{
 
 .campo textarea{
     height: 15rem;
+    resize: none;
 }
 
 .enviar{
@@ -389,4 +403,33 @@ p.p-grafico{
     display: flex !important;
     justify-content: center;
     margin-right: 1.8rem;
+}
+
+
+/*Sobre nosotros*/
+
+.contenido-main p{
+    text-align: justify;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.vision p{
+    padding-bottom: 3rem;
+}
+
+/*Contacto*/
+.foooter{
+    text-align: center;
+}
+
+.medios-contacto{
+ display: block;
+}
+
+.facebook, .whatsapp, .correo{
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
 }
