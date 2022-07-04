@@ -48,3 +48,8 @@ $(function(){
           ]
 	});
 });
+
+
+$("ex1").modal({
+  fadeDuration: 100
+});
