@@ -1,13 +1,15 @@
+
 $(function(){
 	$('.center').slick({
 		infinite:true,
 		slidesToShow: 2,
     slidesToScroll: 1,
-		arrows:false,
+		arrows:true,
 		autoplay: true,
-		autoplaySpeed: 3000,
-		dots: false,
+		autoplaySpeed: 4000,
+		dots: true,
 		centerModel:true,
+  
         centerPadding:'60px',
         responsive: [
             {
@@ -30,7 +32,8 @@ $(function(){
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows:false
               }
             }
           ]
