@@ -6,7 +6,7 @@ $(function(){
     slidesToScroll: 1,
     arrows: true,
 		autoplay: true,
-		autoplaySpeed: 4500,
+		autoplaySpeed: 3800,
 		dots: true,
 		centerModel:true,
   
@@ -50,6 +50,7 @@ $(function(){
 });
 
 
-$("ex1").modal({
-  fadeDuration: 100
+$("#ex1").modal({
+  fadeDuration: 5000,
+  fadeDelay: 0.50
 });
