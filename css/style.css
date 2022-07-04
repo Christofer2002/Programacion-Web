@@ -162,6 +162,7 @@ h3 {
     .p-web {
         text-align: center !important;
         font-weight: bold;
+        font-size: 1.5rem;
     }
 
     .campo:nth-child(3),
@@ -270,6 +271,10 @@ h3 {
     .enviar {
         width: 119%;
         justify-content: end !important;
+    }
+
+    .wrapper .container .top {
+        height: 37rem !important;
     }
 
 }

@@ -4,7 +4,7 @@ $(function(){
 		infinite:true,
 		slidesToShow: 2,
     slidesToScroll: 1,
-		arrows:true,
+    arrows: true,
 		autoplay: true,
 		autoplaySpeed: 4500,
 		dots: true,
@@ -13,19 +13,28 @@ $(function(){
         centerPadding:'60px',
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 900,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
-                /*dots: true*/
+                arrows:false
+              }
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2, 
+                arrows:false
               }
             },
             {
               breakpoint: 600,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 2
+                slidesToScroll: 2, 
+                arrows:false 
               }
             },
             {
